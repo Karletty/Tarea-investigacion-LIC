@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiqueta Canvas en html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Investigación aplicada</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>¿Qué es la etiqueta Canvas?</h2>
+            <div>
+                <p>Canvas es un elemento de HTML 5 que permite dibujar <span class="highlight">gráficos</span>,
+                    manipular imágenes y realizar animaciones en una página web de forma dinámica. Es decir, el gráfico
+                    se
+                    crea en el momento en que se carga la página. El gráfico se define mediante programación, usualmente
+                    Javascript. Una vez creado el gráfico se pueden programar acciones para que el usuario interactue
+                    con
+                    él, por ejemplo, haciendo clic para arrancar una animación o arrastrando un elemento del gráfico.
+                </p>
+
+                <p>Aunque el elemento Canvas se crea con la etiqueta "canvas" al hablar de Canvas en sentido amplio nos
+                    referimos a toda la API que incluye un conjunto de funciones para dibujar, líneas, rectángulos,
+                    círculos, etc. así como para rotar, escalar, transformar elementos gráficos, y otras funciones de
+                    variado uso.</p>
+
+                <p>De hecho podemos cargar una imagen fotográfica en el Canvas y manipular sus pixeles uno a uno.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Ejemplo de cómo utilizar la etiqueta Canvas</h2>
+            <img src="./imagenes/imagen-inicial.png" alt="ejemplo-canvas" class="max-w-500">
+        </div>
+
+        <div class="card">
+            <h2>Principales funcionalidades:</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Gráficas
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Canvas permite dibujar gráficas para representar datos, aunque también se puede realizar
+                                con SVG que usa gráficos vectoriales. Además permite realizar gráficas de ecuaciones o
+                                funciones en 2D o en 3D</p>
+                            <h4>Ejemplos de gráficas en canvas</h4>
+                            <div class="btn-container">
+                                <a href="./canvas/grafica.html" class="btn-outline-pink">Gráfica de
+                                    balances</a>
+                                <a href="https://www.geogebra.org/graphing" target="_blank"
+                                    class="btn-outline-pink">Calculadora gráfica en 2D</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Simulaciones físicas
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Canvas también puede servir en el ámbito educativo debido a que se pueden realizar
+                                simulaciones físicas del comportamiento de fluidos, sistemas gravitacionales, etc</p>
+                            <h4>Ejemplos de simulaciones físicas y librerías usando canvas</h4>
+                            <div class="btn-container">
+                                <a href="https://www.edumedia-sciences.com/es/media/612-oscilador-armonico"
+                                    target="_blank" class="btn-outline-pink">Simulador de Oscilador armónico</a>
+                                <a href="http://box2d-js.sourceforge.net/index2.html" target="_blank"
+                                    class="btn-outline-pink">Librería Box2DJS</a>
+                                <a href="https://phet.colorado.edu/en/simulations/density" target="_blank"
+                                    class="btn-outline-pink">Simulador de densidad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Arte
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Con canvas también se pueden generar imágenes, como texturas basadas en un algoritmo
+                                (<span class="highlight">texturas procedurales</span>), además de poder realizar memes
+                            </p>
+                            <h4>Ejemplos de canvas para arte</h4>
+                            <div class="btn-container">
+                                <a href="https://somethinghitme.com/projects/cell/" target="_blank"
+                                    class="btn-outline-pink">Generador de texturas procedurales</a>
+                                <a href="https://romeroluciana.github.io/Editor-de-memes/" target="_blank"
+                                    class="btn-outline-pink">Generador de memes</a>
+                                <a href="./canvas/dibujo.html" class="btn-outline-pink">Dibujos creados con canvas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Juegos
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Con canvas se pueden crear juegos elaborados dentro de páginas web, sin embargo estos
+                                juegos tienen la característica que solo pueden ser en 2D</p>
+                            <h4>Ejemplos de juegos creados con canvas</h4>
+                            <div class="btn-container">
+                                <a href="http://www.cross-code.com/en/start" target="_blank"
+                                    class="btn-outline-pink">Cross
+                                    Code</a>
+                                <a href="http://hexgl.bkcore.com/play/" target="_blank"
+                                    class="btn-outline-pink">HexGL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> Todos los derechos reservados</p>
+    </footer>
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

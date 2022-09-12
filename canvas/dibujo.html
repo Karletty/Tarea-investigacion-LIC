@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Dibujo</title>
+    <title>Ejemplo gráfica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/grafica.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Gráfica del balance de gastos y ganancias</h1>
+        <a href="../index.html" class="btn-outline-pink">Página principal</a>
+    </header>
+    <main>
+        <section class="columns">
+            <div class='card w-45'>
+                <canvas id='category-balance' width='300' height='300'></canvas>
+                <p><span class="caption">Gráfica creada con Chart.js</span></p>
+            </div>
+            <div class="card w-45">
+                <a href="https://www.chartjs.org/"><img
+                        src="https://i0.wp.com/www.hoclabs.com/wp-content/uploads/2017/03/chartjs.png?fit=1024%2C539&ssl=1"
+                        alt="" class="w-100"></a>
+                <p><span class="caption">Haz click en la imagen para ver más sobre el funcionamiento de Chart.js</span></p>
+            </div>
+        </section>
+        <section class="columns">
+            <div class='card w-45'>
+                <h2>Código HTML para la gráfica</h2>
+                <img src="../imagenes/Grafica-HTML.png" alt="">
+            </div>
+            <div class='card w-45'>
+                <h2>Código JS para la gráfica</h2>
+                <img src="../imagenes/Grafica-JS.png" alt="">
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+
+    <script src="../js/grafica.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
