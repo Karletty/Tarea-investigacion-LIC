@@ -10,3 +10,7 @@
 .w-45{
     width: 45%;
 }
+
+.card{
+    min-width: 400px;
+}
